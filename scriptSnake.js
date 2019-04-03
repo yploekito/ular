@@ -111,7 +111,7 @@ function kronologi(){
 }
 time = 120 //1 menit
 for(var i =1; i< time; i++){
-    var delay = i*5
+    var delay = i*1
     setTimeout(kronologi,delay)
     if(i === 119){
         i=1
