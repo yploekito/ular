@@ -101,6 +101,9 @@ dx = 5
 dy = 0
 
 function kronologi(){
+    if(selesai()){
+        return
+    }
     canvasBaru()
     makanan()
     jalan()
