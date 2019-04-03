@@ -101,18 +101,21 @@ dx = 5
 dy = 0
 
 function kronologi(){
-    if(selesai()){
-        return
-    }
     canvasBaru()
     makanan()
     jalan()
     gambarUlar()
+    if(selesai()){
+        return
+    }
 }
 time = 120 //1 menit
 for(var i =1; i< time; i++){
-    var delay = i*500
+    var delay = i*25
     setTimeout(kronologi,delay)
+    if(i === 119){
+        i=1
+    }
     
 }
 // setTimeout(kronologi,1000)
